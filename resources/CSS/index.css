@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+body{
+    display: ;
+    font-family: 'Asul', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #333;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 80px;
+    width: 100%;
+    background-color: #f0f0f0;
+    font-weight: 700;
+    background-image: linear-gradient(rgba(255,255,255,0) 84%,rgba(255,255,255,1) 90%,rgba(255,255,255,0));
+}
+
+h1{
+    font-size: 36px;
+    width: auto;
+    color: #333;
+    text-shadow: 2px -2px white; 
+    -webkit-transform: skewX(-8deg);
+        -moz-transform: skewX(-8deg);
+        -ms-transform: skewX(-8deg);
+            transform: skewX(-8deg);
+            padding: 14px 0 0 16px;
+}
+
+header nav{
+    display: flex;
+    align-items: flex-end;
+    height: 80px;
+    min-width: 330px;
+    max-width: 330px;
+    position: relative;
+    background-color: #ddd;
+}
+
+header nav div {
+    position: absolute;
+    border-bottom: solid 2px #efefef;
+    border-right: solid 2px #e5e5e5;
+    border-top: solid 2px #bbb;
+    border-left: solid 2px #d5d5d5;
+    border-radius: 8px;
+    background-color: #ddd;
+    background-image: linear-gradient(rgba(250,250,250,0) 82%,rgba(250,250,250,1) 95%,rgba(250,250,250,0));
+    content: "";
+    left: -25px;
+    height: 76px;
+    width: 320px;
+-webkit-transform: skewX(-25deg);
+    -moz-transform: skewX(-25deg);
+    -ms-transform: skewX(-25deg);
+        transform: skewX(-25deg);
+}
+
+header nav::after{
+    position: absolute;
+    border-bottom: solid 2px transparent;
+    border-right: solid 2px #d8d8d8;
+    border-top: solid 2px transparent;
+    border-left: solid 2px transparent;
+    content: "";
+    left: -4px;
+    height: 76px;
+}
+
+header a{
+    color: #333;
+    text-decoration: none;
+}
+
+header nav p{
+    position: relative;
+    text-align: center;
+    width: 106px;
+    height: 48px;
+    border-bottom: solid 2px #efefef;
+    border-right: solid 2px #d8d8d8;
+    border-top: solid 2px #bbb;
+    border-left: solid 2px #e9e9e9;
+    padding-top: 28px;
+    text-shadow: 2px -2px #eee;
+    background-color: #ddd;
+    background-image: linear-gradient(rgba(250,250,250,0) 82%,rgba(250,250,250,1) 95%,rgba(250,250,250,0));
+
+}
+
+header nav p:hover{
+    border-bottom: solid 2px #efefef;
+    border-right: solid 2px #ddd;
+    border-top: solid 2px #ccc;
+    border-left: solid 2px #ebebeb;
+    color: #555;
+    background-color: #e6e6e6;
+}
+
+header nav p:active{
+    border-bottom: solid 2px #efefef;
+    border-right: solid 2px #e6e6e6;
+    border-top: solid 2px #d0d0d0;
+    border-left: solid 2px #ebebeb;
+    color: #555;
+    background-color: #ececec;
+}
+
+
+@media screen and (max-width:636px){
+    header{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 114px;
+        background-image: linear-gradient(rgba(255,255,255,0) 50%,rgba(255,255,255,1) 55%,rgba(255,255,255,0)57%);
+    }
+    
+    h1{
+        padding: 14px 0 0 0;
+        margin-bottom: 10px;
+    }
+
+    header nav{
+        min-width: 100%;
+        max-width: 100%;
+        /* height: px; */
+        /* border: solid; */
+        justify-content: center;
+        position: relative;
+    }
+    
+    header nav div {
+        display: none;
+    }
+
+    header nav::after{
+        display: none;
+    }
+
+    header nav p{
+        width: auto;
+        height: 32px;
+        padding-top: 10px;
+    }
+}
+
+main{
+    width: 100%;
+    max-width: 1080px;
+    box-sizing: border-box;
+    /* border: solid; */
+    margin: auto;
+    padding: 40px 15px 40px 15px;
+}
+
+main p{
+    font-size: 17px;
+}
+
+#skills ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border: solid; */
+}
+#skills li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+    margin-top: 20px;
+    width: 80px;
+    /* border: solid; */
+}
+@media screen and (max-width:989px){
+    #skills li{
+        width: 16.5%;
+    }
+}
+@media screen and (max-width:599px){
+    #skills li{
+        width: 25%;
+    }
+}
+@media screen and (max-width:407px){
+    #skills li{
+        width: 33.3%;
+    }
+}
+#skills img{
+    width: 60px;
+    height: auto;
+}
+
+#projectsintro div{
+    display: flex;
+    justify-content: space-between;
+}
+#swimscont{
+    width: 200px;
+    margin-right: 10px;
+}
+
+
+#SWIMS:hover{
+    cursor: pointer;
+}
+#SWIMS{
+    width: 100px;
+    height: auto;
+    margin: auto;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(180deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(180deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(180deg); 
+        transform:rotate(180deg); 
+    } 
+}
+#trees{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#trees div{
+    height: min-content;
+}
+#treescont{
+    display: flex;
+    flex-direction: column;
+    min-width: 384px;
+    max-width: 384px;
+    margin-left: 20px;
+}
+
+#treescont figure{
+    /* margin: 4px 0 4px 0; */
+    text-align: center;
+}
+#trees figcaption{
+    position: relative;
+    bottom: 4px;
+}
+
+@media screen and (max-width:790px){
+    #trees{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #treescont{
+        margin: 20px auto;
+    }
+}
+#messi{
+    display: flex;
+    justify-content: space-between;
+}
+#messicont{
+    display: grid;
+    grid-template-rows: 0fr 0fr 0.8fr 0.8fr 0.5fr 0.75fr;
+    grid-template-columns: 1fr;
+    flex-basis: calc(129.898% - 455.42px);
+    max-width: 380px;
+    margin-right: 10px;
+}
+#messi figure{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+#messi img{
+    width: 180px;
+    height: 240px;
+}
+
+ @media screen and (max-width:900px) and (min-width:750px){
+
+    #messi figcaption{
+        position: absolute;
+        width: calc(60vw - 354px);
+        left: 198px;
+    }
+}
+@media screen and (min-width:900px){
+    #messicont{
+        grid-template-rows: 1.8fr 2.4fr 2fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    #messi figure{
+        width: 180px;
+        margin-right: 5px;
+    }
+}
+#contacts li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+#contacts img{
+    position: relative;
+    top: 14px;
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
